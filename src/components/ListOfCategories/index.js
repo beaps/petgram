@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Category } from '../Category'
+import { Loader } from '../Loader'
 
 import { List, Item } from './styles'
 
@@ -39,7 +40,7 @@ export const ListOfCategories = () => {
     <List fixed={fixed}>
       {
         loading
-          ? <Item key='loading'><Category /></Item>
+          ? <Item key='loading' loader><Loader /></Item>
           : categories.map(category => <Item key={category.id}><Category {...category} /></Item>)
       }
     </List>

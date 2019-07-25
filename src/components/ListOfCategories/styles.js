@@ -27,4 +27,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   padding: 0 8px;
+  ${props => props.loader && css`
+    margin: 0 auto;
+  `}
 `
