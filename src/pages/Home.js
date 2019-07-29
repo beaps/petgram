@@ -2,11 +2,11 @@ import React, { Fragment } from 'react'
 import { ListOfCategories } from '../components/ListOfCategories'
 import { ListOfPhotoCardsWithQuery } from '../container/ListOfPhotoCardsWithQuery'
 
-export const Home = ({ id }) => {
+export const Home = ({ categoryId }) => {
   return (
     <Fragment>
       <ListOfCategories />
-      <ListOfPhotoCardsWithQuery categoryId={id} />
+      <ListOfPhotoCardsWithQuery categoryId={categoryId} />
     </Fragment>
   )
 }
