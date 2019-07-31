@@ -18,8 +18,8 @@ export const UserForm = ({ error, disabled, onSubmit, title }) => {
     <Fragment>
       <Form disabled={disabled} onSubmit={handleSubmit}>
         <Title>{title}</Title>
-        <Input disabled={disabled} placeholder='email' type='email' {...email} />
-        <Input disabled={disabled} placeholder='password' type='password' {...password} />
+        <Input disabled={disabled} placeholder='Email' {...email} />
+        <Input disabled={disabled} placeholder='Password' type='password' {...password} />
         <Button disabled={disabled}>{title}</Button>
       </Form>
       {error && <Error>{error}</Error>}
