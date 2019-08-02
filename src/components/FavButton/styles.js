@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-  min-width: 50%;
+  min-width: 30%;
   min-height: 30px;
   margin-bottom: 1rem;
   position: relative;
